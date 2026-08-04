@@ -15,6 +15,11 @@
   --color-gatin-ink: oklch(0.14 0.01 260);
   --color-gatin-sand: oklch(0.74 0.11 75);
   --color-gatin-teal: oklch(0.42 0.07 195);
+
+  --color-lmills-cream: oklch(0.96 0.02 85);
+  --color-lmills-ink: oklch(0.16 0.02 60);
+  --color-lmills-sun: oklch(0.80 0.15 85);
+  --color-lmills-sage: oklch(0.55 0.08 150);
 }
 
 /*
@@ -160,6 +165,10 @@
   @apply w-full rounded-xl border border-gatin-sand/20 bg-gatin-cream/5 px-4 py-3 text-sm text-gatin-cream placeholder:text-gatin-cream/40 outline-none transition focus:border-gatin-sand focus:ring-2 focus:ring-gatin-sand/30;
 }
 
+.lm-input {
+  @apply w-full rounded-xl border border-lmills-ink/15 bg-white px-4 py-3 text-sm text-lmills-ink placeholder:text-lmills-ink/40 outline-none transition focus:border-lmills-sage focus:ring-2 focus:ring-lmills-sage/30;
+}
+
 @keyframes gtn-kenburns {
   0% { transform: scale(1); }
   100% { transform: scale(1.12); }
@@ -174,4 +183,20 @@
 }
 .animate-gtn-marquee {
   animation: gtn-marquee 22s linear infinite;
+}
+
+@keyframes lm-kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
+}
+.lm-kenburns {
+  animation: lm-kenburns 8s ease-out forwards;
+}
+
+@keyframes lm-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-lm-marquee {
+  animation: lm-marquee 22s linear infinite;
 }

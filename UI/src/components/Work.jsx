@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import heroLawn from "@/assets/hero-lawn.jpg";
+import mowingAction from "@/assets/mowing-action.jpg";
 
-const HERO = "https://media.base44.com/images/public/6a5d5a3dd2e5eb4ee0df1b96/44b0e991a_generated_image.png";
-const LAWN = "https://media.base44.com/images/public/6a5d5a3dd2e5eb4ee0df1b96/68ec7ea89_generated_image.png";
-const YARD = "https://media.base44.com/images/public/6a5d5a3dd2e5eb4ee0df1b96/7b80d7677_generated_image.png";
+const HERO = heroLawn;
+const LAWN = mowingAction;
+const YARD = heroLawn;
 
 export default function Work() {
   const fadeUp = { hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0 } };

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronDown, Sun } from "lucide-react";
+import heroLawn from "@/assets/hero-lawn.jpg";
+import mowingAction from "@/assets/mowing-action.jpg";
 
-const SLIDES = [
-  "https://media.base44.com/images/public/6a5d5a3dd2e5eb4ee0df1b96/44b0e991a_generated_image.png",
-  "https://media.base44.com/images/public/6a5d5a3dd2e5eb4ee0df1b96/7b80d7677_generated_image.png",
-];
+const SLIDES = [heroLawn, mowingAction];
 
 const STATS = [
   { n: 12, s: "+", l: "Years in Escondido" },
