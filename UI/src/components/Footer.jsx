@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@tanstack/react-router";
 import { Sun, Leaf, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -25,12 +26,12 @@ export default function Footer() {
         <div>
           <h4 className="font-fraunces text-lmills-cream text-lg font-bold mb-4">Services</h4>
           <ul className="space-y-2 font-manrope text-sm">
-            <li><a href="#lm-services" className="hover:text-lmills-sun">Lawn Mowing</a></li>
-            <li><a href="#lm-services" className="hover:text-lmills-sun">Precision Edging</a></li>
-            <li><a href="#lm-services" className="hover:text-lmills-sun">Seasonal Programs</a></li>
-            <li><a href="#lm-services" className="hover:text-lmills-sun">Yard & Landscape Care</a></li>
+            <li><Link to="/services" className="hover:text-lmills-sun">Lawn Mowing</Link></li>
+            <li><Link to="/services" className="hover:text-lmills-sun">Precision Edging</Link></li>
+            <li><Link to="/services" className="hover:text-lmills-sun">Seasonal Programs</Link></li>
+            <li><Link to="/services" className="hover:text-lmills-sun">Yard & Landscape Care</Link></li>
           </ul>
-          <a href="#lm-quote" className="inline-block mt-5 px-5 py-2.5 rounded-full bg-lmills-sun text-lmills-ink font-manrope font-semibold text-sm hover:bg-lmills-cream transition">Free Quote</a>
+          <Link to="/book" className="inline-block mt-5 px-5 py-2.5 rounded-full bg-lmills-sun text-lmills-ink font-manrope font-semibold text-sm hover:bg-lmills-cream transition">Free Quote</Link>
         </div>
       </div>
       <div className="border-t border-lmills-cream/10 mt-12 pt-6 max-w-[1320px] mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between gap-3 font-manrope text-xs text-lmills-cream/50">

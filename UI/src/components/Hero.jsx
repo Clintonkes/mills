@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 import { ArrowRight, ChevronDown, Sun } from "lucide-react";
 import heroLawn from "@/assets/hero-lawn.jpg";
 import mowingAction from "@/assets/mowing-action.jpg";
@@ -69,18 +70,18 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="flex flex-wrap gap-4 mt-9"
         >
-          <a
-            href="#lm-quote"
+          <Link
+            to="/book"
             className="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-lmills-sun text-lmills-ink font-manrope font-semibold hover:bg-lmills-cream transition shadow-xl shadow-lmills-ink/40"
           >
             <ArrowRight size={18} /> Get a Free Quote
-          </a>
-          <a
-            href="#lm-services"
+          </Link>
+          <Link
+            to="/services"
             className="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-lmills-cream/30 text-lmills-cream font-manrope font-semibold hover:bg-lmills-cream hover:text-lmills-ink transition"
           >
             Explore Services
-          </a>
+          </Link>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

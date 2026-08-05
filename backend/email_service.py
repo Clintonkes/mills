@@ -76,12 +76,12 @@ def booking_confirmation_html(name: str, reference: str, address: str, service: 
     <body>
         <div class="container">
             <div class="header">
-                <h1>ALANRICH</h1>
-                <p>PROFESSIONAL LAWN CARE</p>
+                <h1>L MILLS</h1>
+                <p>LAWNCARE &amp; LANDSCAPE CARE</p>
             </div>
             <div class="body">
                 <h2>Thank you, {name}.</h2>
-                <p>Your service request has been received. A Gatin Consult specialist will review your request and contact you within one business day.</p>
+                <p>Your service request has been received. An L Mills specialist will review your request and contact you within one business day.</p>
                 <div class="details">
                     <p><strong>Service:</strong> {service_display}</p>
                     <p><strong>Property Address:</strong> {address}</p>
@@ -89,11 +89,11 @@ def booking_confirmation_html(name: str, reference: str, address: str, service: 
                     <p><strong>Preferred Time:</strong> {time_display}</p>
                     <p><strong>Status:</strong> Pending Review</p>
                 </div>
-                <p>We appreciate your interest in Gatin Consult. Our team is committed to providing estate-grade grounds management on the Monterey Peninsula.</p>
+                <p>We appreciate your interest in L Mills. Our team is committed to providing reliable, detail-driven lawncare across Escondido and the North County valley.</p>
             </div>
             <div class="ref">REF · {reference}</div>
             <div class="footer">
-                <p>ALANRICH LLC · GROVES, TEXAS</p>
+                <p>L MILLS LLC · ESCONDIDO, CALIFORNIA</p>
                 <p>LICENSED · INSURED</p>
             </div>
         </div>
@@ -111,7 +111,7 @@ def booking_status_html(name: str, reference: str, status: str, address: str) ->
     status_messages = {
         "approved": "Your service request has been <strong>approved</strong>. Our team will contact you shortly to schedule your first visit.",
         "cancelled": "Your service request has been <strong>cancelled</strong>. If you believe this is an error, please contact us.",
-        "completed": "Your service has been <strong>completed</strong>. Thank you for choosing Aveness for your estate lawncare needs.",
+        "completed": "Your service has been <strong>completed</strong>. Thank you for choosing L Mills for your lawncare needs.",
     }
 
     status_colors = {
@@ -148,8 +148,8 @@ def booking_status_html(name: str, reference: str, status: str, address: str) ->
     <body>
         <div class="container">
             <div class="header">
-                <h1>ALANRICH</h1>
-                <p>PROFESSIONAL LAWN CARE</p>
+                <h1>L MILLS</h1>
+                <p>LAWNCARE &amp; LANDSCAPE CARE</p>
             </div>
             <div class="body">
                 <h2>Hello, {name}.</h2>
@@ -162,7 +162,7 @@ def booking_status_html(name: str, reference: str, status: str, address: str) ->
             </div>
             <div class="ref">REF · {reference}</div>
             <div class="footer">
-                <p>ALANRICH LLC · GROVES, TEXAS</p>
+                <p>L MILLS LLC · ESCONDIDO, CALIFORNIA</p>
                 <p>LICENSED · INSURED</p>
             </div>
         </div>
@@ -194,8 +194,8 @@ def contact_confirmation_html(name: str, subject: str, message: str) -> str:
     <body>
         <div class="container">
             <div class="header">
-                <h1>ALANRICH</h1>
-                <p>PROFESSIONAL LAWN CARE</p>
+                <h1>L MILLS</h1>
+                <p>LAWNCARE &amp; LANDSCAPE CARE</p>
             </div>
             <div class="body">
                 <h2>Thank you, {name}.</h2>
@@ -206,7 +206,7 @@ def contact_confirmation_html(name: str, subject: str, message: str) -> str:
                 </div>
             </div>
             <div class="footer">
-                <p>ALANRICH LLC · GROVES, TEXAS</p>
+                <p>L MILLS LLC · ESCONDIDO, CALIFORNIA</p>
                 <p>LICENSED · INSURED</p>
             </div>
         </div>
@@ -238,7 +238,7 @@ def contact_admin_notification_html(name: str, email: str, subject: str, message
     <body>
         <div class="container">
             <div class="header">
-                <h1>ALANRICH</h1>
+                <h1>L MILLS</h1>
                 <p>NEW CONTACT MESSAGE</p>
             </div>
             <div class="body">
@@ -250,7 +250,7 @@ def contact_admin_notification_html(name: str, email: str, subject: str, message
                 </div>
             </div>
             <div class="footer">
-                <p>ALANRICH LLC · GROVES, TEXAS</p>
+                <p>L MILLS LLC · ESCONDIDO, CALIFORNIA</p>
             </div>
         </div>
     </body>
